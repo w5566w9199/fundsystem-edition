@@ -1,0 +1,253 @@
+C:.
+|   .env
+|   .env.example
+|   .gitignore
+|   composer.json
+|   composer.lock
+|   package-lock.json
+|   package.json
+|   
++---app        
+|   +---Exports
+|   |       FundExport.php
+|   |       
+|   +---Http
+|   |   +---Controllers
+|   |   |       assetcontroller.php
+|   |   |       checksubplancontroller.php
+|   |   |       Controller.php
+|   |   |       DropzoneController.php
+|   |   |       FileDownloadController.php
+|   |   |       fund_tablecontroller.php
+|   |   |       implementation_mattercontroller.php
+|   |   |       imptestcontroller.php
+|   |   |       LoadFundController.php
+|   |   |       SchoolController.php
+|   |   |       subplancontroller.php
+|   |   |       subplanfundtableupdate.php
+|   |   |       testpagecontroller.php
+|   |   |       updatefundcontroller.php
+|   |   |       UserController.php
+|   |   |       
+|   |   \---Middleware
+|   |           Authenticate.php
+|   |           EncryptCookies.php
+|   |           HandleInertiaRequests.php
+|   |           PreventRequestsDuringMaintenance.php
+|   |           RedirectIfAuthenticated.php
+|   |           TrimStrings.php
+|   |           TrustHosts.php
+|   |           TrustProxies.php
+|   |           VerifyCsrfToken.php
+|   |           
+|   +---Models
+|   |       asset.php
+|   |       fund_table.php
+|   |       implementation_matter.php
+|   |       subplan.php
+|   |       User.php
+|   |       
+|   +---Policies
+|   |       UserPolicy.php
+|   |       
+|   \---Traits
+|           HasCan.php
+|
++---config
+|       app.php
+|       auth.php
+|       database.php
+|       excel.php
+|       fortify.php
+|       hashing.php
+|       jetstream.php
+|       logging.php
+|       view.php
+|       
++---database
+|   +---factories
+|   |       UserFactory.php
+|   |       
+|   +---migrations
+|   |       2014_10_12_000000_create_users_table.php
+|   |       2014_10_12_100000_create_password_resets_table.php
+|   |       2014_10_12_200000_add_two_factor_columns_to_users_table.php
+|   |       2019_08_19_000000_create_failed_jobs_table.php
+|   |       2019_12_14_000001_create_personal_access_tokens_table.php
+|   |       2020_09_10_014857_create_sessions_table.php
+|   |       2021_09_06_080757_fund_name_table.php
+|   |       2021_09_06_081003_plan_table.php
+|   |       2021_09_06_081102_asset_table.php
+|   |       2021_09_06_081103_sub_strategy_table.php
+|   |       2021_09_06_081104_sub_strategy_id_table.php
+|   |       2021_09_06_081105_school_table.php
+|   |       2021_09_06_081117_implementation_matter_table.php
+|   |       2021_09_06_081126_status_table.php
+|   |       2021_09_06_081126_sub_plan_fund_table.php
+|   |       2021_09_06_081136_kpi_table.php
+|   |       2021_09_06_081147_indicator_table.php
+|   |       2021_09_06_081151_sub_plan_fund_detail_table.php
+|   |       2021_09_09_070057_sub_plan_fund_detail_trigger.php
+|   |       2021_09_09_175440_requisition_detail.php
+|   |       2021_09_22_113521_fund_paid.php
+|   |       2021_09_22_113533_implementation_matter_file.php
+|   |       2021_09_22_113534_sub_plan_fund_detail_file.php
+|   |       2021_09_22_113535_all_trigger.php
+|   |       2021_09_22_113536_sub_plan_use_fund.php
+|   |       
+|   \---seeders
+|           adduser.php
+|           assets.php
+|           DatabaseSeeder.php
+|           fund_name_table.php
+|           implementation_matter_table.php
+|           indicator_table.php
+|           kpi_table.php
+|           plan_table.php
+|           requisition_detail.php
+|           school_table.php
+|           status_table.php
+|           sub_plan_fund_detail_table.php
+|           sub_plan_fund_table.php
+|           sub_strategy_id_table.php
+|           sub_strategy_table.php
+|           
++---node_modules
+|   |
+|   |... ...
+|   |
+|   \----略過
+|   
++---public
+|   |   favicon.ico
+|   |   index.php
+|   |   main.js
+|   |   web.config
+|   |   
+|   +---css
+|   |       app.css
+|   |       weini.png
+|   |       weini_icon.png
+|   |       
+|   +---fonts
+|   |   \---vendor
+|   |       +---element-plus
+|   |       |   \---dist
+|   |       |           element-icons.ttf
+|   |       |           element-icons.woff
+|   |       |           
+|   |       \---element-ui
+|   |           \---lib
+|   |               \---theme-chalk
+|   |                       element-icons.ttf
+|   |                       element-icons.woff
+|   |       
+|   \---sub_plan_fund_detail_file
+|       \---T11112000001
+|               1650251418-0.txt
+|               1650253928-0.txt
+|               
++---resources
+|   +---css
+|   |       app.css
+|   |       
+|   +---js
+|   |   |   app.js
+|   |   |   bootstrap.js
+|   |   |   
+|   |   +---Layouts
+|   |   |       AppLayout.vue
+|   |   |       
+|   |   +---Pages
+|   |   |   |   Dashboard.vue
+|   |   |   |   PrivacyPolicy.vue
+|   |   |   |   TermsOfService.vue
+|   |   |   |   Welcome.vue
+|   |   |   |   
+|   |   |   +---API
+|   |   |   |   |   Index.vue
+|   |   |   |   |   
+|   |   |   |   \---Partials
+|   |   |   |           ApiTokenManager.vue
+|   |   |   |           
+|   |   |   +---asset
+|   |   |   |       index.vue
+|   |   |   |       
+|   |   |   +---Auth
+|   |   |   |       ConfirmPassword.vue
+|   |   |   |       ForgotPassword.vue
+|   |   |   |       Login.vue
+|   |   |   |       Register.vue
+|   |   |   |       ResetPassword.vue
+|   |   |   |       TwoFactorChallenge.vue
+|   |   |   |       VerifyEmail.vue
+|   |   |   |       
+|   |   |   +---filedownload
+|   |   |   |       index.vue
+|   |   |   |       
+|   |   |   +---fundtable
+|   |   |   |       create.vue
+|   |   |   |       index.vue
+|   |   |   |       
+|   |   |   +---implementation_matter
+|   |   |   |       create.vue
+|   |   |   |       edit.vue
+|   |   |   |       index.copy.vue
+|   |   |   |       index.vue
+|   |   |   |       
+|   |   |   +---imptest
+|   |   |   |       create.vue
+|   |   |   |       edit.vue
+|   |   |   |       index.vue
+|   |   |   |       
+|   |   |   +---Profile
+|   |   |   |   |   Show.vue
+|   |   |   |   |   
+|   |   |   |   \---Partials
+|   |   |   |           DeleteUserForm.vue
+|   |   |   |           LogoutOtherBrowserSessionsForm.vue
+|   |   |   |           TwoFactorAuthenticationForm.vue
+|   |   |   |           UpdatePasswordForm.vue
+|   |   |   |           UpdateProfileInformationForm.vue
+|   |   |   |           
+|   |   |   +---school
+|   |   |   |       create.vue
+|   |   |   |       
+|   |   |   +---subplan
+|   |   |   |       create.vue
+|   |   |   |       edit.vue
+|   |   |   |       index.copy.vue
+|   |   |   |       index.vue
+|   |   |   |       show.vue
+|   |   |   |       
+|   |   |   +---testpage
+|   |   |   |       create.vue
+|   |   |   |       edit.vue
+|   |   |   |       index.vue
+|   |   |   |       
+|   |   |   \---User
+|   |   |           Create.vue
+|   |   |           Edit.vue
+|   |   |           Index.vue
+|   |   |           Show.vue
+|   |   |           
+|   |   \---test
+|   |           index.vue
+|   |           
+|   +---lang
+|   |   \---en
+|   |           auth.php
+|   |           pagination.php
+|   |           passwords.php
+|   |           validation.php
+|   |       
+|   \---views
+|           app.blade.php
+|           dropzone.blade.php
+|           
++---routes
+|       api.php
+|       channels.php
+|       console.php
+|       web.php
+                

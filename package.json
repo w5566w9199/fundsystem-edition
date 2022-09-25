@@ -1,0 +1,51 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@inertiajs/inertia": "^0.10.0",
+        "@inertiajs/inertia-vue3": "^0.5.1",
+        "@inertiajs/progress": "^0.2.6",
+        "@tailwindcss/forms": "^0.2.1",
+        "@tailwindcss/typography": "^0.3.0",
+        "@vue/compiler-sfc": "^3.0.5",
+        "add-asset-html-webpack-plugin": "^5.0.2",
+        "axios": "^0.21",
+        "browser-sync": "^2.27.7",
+        "laravel-mix": "^6.0.49",
+        "lodash": "^4.17.21",
+        "postcss": "^8.1.14",
+        "postcss-import": "^14.1.0",
+        "tailwindcss": "^2.0.1",
+        "vue": "^3.0.5",
+        "vue-loader": "^16.1.2",
+        "webpack-cli": "^4.10.0"
+    },
+    "dependencies": {
+        "@babel/core": "^7.18.10",
+        "@babel/preset-env": "^7.16.4",
+        "@headlessui/vue": "^1.6.7",
+        "@heroicons/vue": "^1.0.6",
+        "@vue/cli": "^5.0.4",
+        "autoprefixer": "10.4.5",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "dateformat": "^5.0.3",
+        "dropzone": "^5.9.3",
+        "element-plus": "^1.3.0-beta.10",
+        "gitart-vue-dialog": "^1.2.4",
+        "jquery": "^3.6.0",
+        "js-file-download": "^0.4.12",
+        "spec": "^1.0.1",
+        "vue-cli": "^2.8.2",
+        "vue3-datepicker": "^0.2.5",
+        "vuejs-progress-bar": "^1.2.8",
+        "webpack": "^5.74.0"
+    }
+}

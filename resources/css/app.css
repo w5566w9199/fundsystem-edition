@@ -1,0 +1,101 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/*** RADIAL PROGRESS ***/
+/* Circumference = 2πr */
+/* π = 3.1415926535898 */
+/* r = 35 */
+.getting-started-example-styled__content {
+  padding: 20px;
+}
+.getting-started-example-styled__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.getting-started-example-styled__actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.close-btn{
+  cursor: pointer;
+}
+#fund_modal{
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+#fund_modal > div > div, #sub_modal > div > div{
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+.h-screen-80{
+	height: 80vh;
+}
+.max-h-screen-90{
+  max-height: 80vh;
+}
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+svg.radial-progress {
+  height: auto;
+  max-width: 200px;
+  padding: 0.5em;
+  transform: rotate(-90deg);
+  /* width: 50%; */
+}
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; /* Circumference */
+  stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+
+svg.radial-progress text {
+  fill: black; /*字顏色*/
+  font: 400 1em/1 'Oswald', sans-serif;
+  text-anchor: middle;
+}
+
+/*** COLORS ***/
+/* Primary */
+svg.radial-progress:nth-of-type(6n+1) circle { stroke: #a2ed56; }
+
+/* Secondary */
+svg.radial-progress:nth-of-type(6n+2) circle { stroke: #83e4e2; }
+
+/* Tertiary */
+svg.radial-progress:nth-of-type(6n+3) circle { stroke: #fd6470; }
+
+/* Quaternary */
+svg.radial-progress:nth-of-type(6n+4) circle { stroke: #fca858; }
+
+/* Quinary */
+svg.radial-progress:nth-of-type(6n+5) circle { stroke: #fddc32; }
